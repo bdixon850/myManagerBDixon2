@@ -7,6 +7,7 @@ import Profile from './components/Profile';
 // import Search from './pages/Search'
 import Contractor from './components/Contractor';
 import './App.css';
+import ThankYou from './components/Thankyou';
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
             <Route exact path='/profile' component={Profile} />
             <Route exact path='/payment' component={Payment} />
             <Route exact path='/contractor' component={Contractor}/>
+            <Route exact path='/thankyou' component={ThankYou} />
           </Switch>
         </Router>
       </div>

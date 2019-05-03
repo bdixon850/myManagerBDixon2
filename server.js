@@ -3,6 +3,9 @@ const PORT = process.env.PORT || 8080;
 const mongoose = require('mongoose');
 const app = express();
 const db = require('./models');
+const stripe = require('stripe')('sk_test_20MQcHKiDiettG9cfMdTDcRM00h29hfI4A');
+
+app.use(require('body-parser').text());
 
 
 // Define middleware
@@ -30,9 +33,23 @@ db.Contractor.create({ name: "Morgan", email: "morgan@gmail.com", occupation: "P
         console.log(err);
     })
 
+app.post('/charge', async (req, res) => {
+    try {
+        let { status } = await stripe.charges.create({
+            amount: 2000,
+            currency: "usd", 
+            description: "An example charge", 
+            source: req.body
+        });
+
+        res.json({status});
+    }   catch (err) {
+        res.status(500).end();
+    }
+});
+
 
 require('./routes/api-routes')(app);
-// require('./routes/routes')(router);
 
 app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`);
