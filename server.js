@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
+    app.use(express.static("client/build"));
 }
 
 // Connect to Mongo DB
@@ -22,7 +22,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/myManager")
         console.log('Error', err)
     })
 
-db.Contractor.create({ name: "Morgan", email: "morgan@gmail.com", occupation: "Painter", price: 3.75})
+db.Contractor.create({ name: "Morgan", email: "morgan@gmail.com", occupation: "Painter", price: 3.75 })
     .then((dbContractor) => {
         console.log(dbContractor)
     })

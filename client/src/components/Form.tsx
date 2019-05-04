@@ -7,48 +7,48 @@ class Form extends React.Component<IFormProps, IFormState> {
     constructor(props: IFormProps) {
         super(props);
         this.state = {
-            name: "", 
+            name: "",
             amount: ""
         };
     }
 
-    handleSubmit = async (e: React.ChangeEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        try {
-            let { token } = await this.props.stripe.createToken({ name: this.state.name });
-            console.log(token)
-            // let amount = this.state.amount;
-            // await fetch('/api/donate', {
-            //     method: 'POST', 
-            //     headers: {
-            //         'Content-type': 'application/json'
-            //     },
-            //     body: JSON.stringify({ token, amount })
-            // })
-              //redirect, clear input, thank  you message  
-        } catch(e) {
-            throw e;
-        }
-    }
+    // handleSubmit = async (e: React.ChangeEvent<HTMLFormElement>) => {
+    //     e.preventDefault();
+    //     try {
+    //         let { token } = await this.props.stripe.createToken({ name: this.state.name });
+    //         console.log(token)
+    //         // let amount = this.state.amount;
+    //         // await fetch('/api/donate', {
+    //         //     method: 'POST', 
+    //         //     headers: {
+    //         //         'Content-type': 'application/json'
+    //         //     },
+    //         //     body: JSON.stringify({ token, amount })
+    //         // })
+    //           //redirect, clear input, thank  you message  
+    //     } catch(e) {
+    //         throw e;
+    //     }
+    // }
 
 
     render() {
         return (
             <main className="container">
-            <h1>Please enter payment information below</h1>
-                <form 
+                <h1>Please enter payment information below</h1>
+                <form
                     className="form-group mt-3 border border-primary rounded shadow-lg p-3"
-                    onSubmit={this.handleSubmit}
+                // onSubmit={this.handleSubmit}
                 >
                     <label>Name</label>
-                    <input 
+                    <input
                         type="text"
                         className="input-group my-1 p-1 border border-dark"
                         value={this.state.name}
                         onChange={(e: React.ChangeEvent<HTMLInputElement>) => this.setState({ name: e.target.value })}
                     />
                     <label>Amount</label>
-                    <input 
+                    <input
                         type="text"
                         className="input-group my-1 p-1 border border-dark"
                         value={this.state.amount}
@@ -65,7 +65,7 @@ class Form extends React.Component<IFormProps, IFormState> {
 
 interface IFormProps extends ReactStripeElements.InjectedStripeProps { }
 
-interface IFormState { 
+interface IFormState {
     name: string;
     amount: string;
 }
