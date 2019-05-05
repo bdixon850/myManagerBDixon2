@@ -10,6 +10,11 @@ class Dashboard extends Component {
         this.props.logoutUser();
     };
 
+    onSearchClick = e => {
+        e.preventDefault();
+        window.location.href = "/contractor"
+    };
+
 
     render() {
         const { user } = this.props.auth;
@@ -21,8 +26,7 @@ class Dashboard extends Component {
                 <h4>
                 <b>Hey there,</b> {user.name.split(" ")[0]}
                 <p className="flow-text grey-text text-darken-1">
-                    You are logged into a full-stack{" "}
-                    <span style={{ fontFamily: "monospace" }}>MERN</span> app 👏
+                    You are logged into myManager
                 </p>
                 </h4>
                 <button
@@ -36,6 +40,18 @@ class Dashboard extends Component {
                 className="btn btn-large waves-effect waves-light hoverable blue accent-3"
                 >
                 Logout
+                </button>
+                <button
+                    style={{
+                        width: "150px",
+                        borderRadius: "3px",
+                        letterSpacing: "1.5px",
+                        marginTop: "1rem"
+                    }}
+                    onClick={this.onSearchClick}
+                    className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+                >
+                Search Contractors
                 </button>
             </div>
             </div>

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import  'bootstrap/dist/css/bootstrap.css';
 import contractors from '../contractors.json';
-import { loginUser } from '../actions/authActions.js';
 
 class Contractor extends Component {
     constructor(props) {
@@ -41,7 +40,6 @@ class Contractor extends Component {
     render() {
         return (
             <div>
-                <h1>Welcome {loginUser}</h1>
                 {this.state.contractors.map(contractor => (
                     <div className="card" key={contractor.id} id={contractor.id}>
                         <img src={contractor.image} className="card-img-top" alt={contractor.Name}></img>
