@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import  'bootstrap/dist/css/bootstrap.css';
 import contractors from '../contractors.json';
+import { loginUser } from '../actions/authActions.js';
 
 class Contractor extends Component {
     constructor(props) {
@@ -40,6 +41,7 @@ class Contractor extends Component {
     render() {
         return (
             <div>
+                <h1>Welcome {loginUser}</h1>
                 {this.state.contractors.map(contractor => (
                     <div className="card" key={contractor.id} id={contractor.id}>
                         <img src={contractor.image} className="card-img-top" alt={contractor.Name}></img>
@@ -67,11 +69,11 @@ class Contractor extends Component {
                                             <form>
                                                 <div className="form-group">
                                                     <label htmlFor="recipient-name" className="col-form-label">Personal Message:</label>
-                                                    <input type="text" className="form-control" id="recipient-name"></input>
+                                                    <input type="text" className="form-control" id="recipient-name" required></input>
                                                 </div>
                                                 <div className="form-group">
                                                     <label htmlFor="message-text" className="col-form-label">Offer Price:</label>
-                                                    <textarea className="form-control" id="message-text"></textarea>
+                                                    <textarea className="form-control" id="message-text" required></textarea>
                                                 </div>
                                             </form>
                                         </div>
