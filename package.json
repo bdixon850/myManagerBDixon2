@@ -1,42 +1,31 @@
 {
-  "name": "mern",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "name": "mearnauthapp",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "node server.js",
-    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-    "client": "cd client && npm run start",
-    "install": "cd client && npm install",
-    "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
-  },
-  "proxy": "http://localhost:8080",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "concurrently": "^4.1.0",
-    "nodemon": "^1.18.7"
+    "client-install": "npm install --prefix client",
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "dependencies": {
-    "@types/react-stripe-elements": "^1.1.10",
-    "@types/stripe": "^6.25.13",
     "axios": "^0.18.0",
     "bcryptjs": "^2.4.3",
-    "cookie-parser": "^1.4.4",
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.0",
+    "cookie-parser": "~1.4.3",
     "cookie-session": "^1.3.3",
-    "dotenv": "^7.0.0",
-    "express": "^4.16.4",
-    "jquery": "^3.4.0",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "hbs": "~4.0.1",
+    "http-errors": "~1.6.2",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.5.4",
+    "mongoose": "^5.5.5",
+    "morgan": "~1.9.0",
     "passport": "^0.4.0",
     "passport-google-oauth": "^2.0.0",
     "passport-local": "^1.0.0",
-    "react-stripe-elements": "^3.0.0",
-    "stripe": "^6.31.1",
-    "typescript": "^3.4.5"
+    "react-router-dom": "^5.0.0"
   }
 }

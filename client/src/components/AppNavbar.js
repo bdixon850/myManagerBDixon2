@@ -36,7 +36,13 @@ class AppNavbar extends React.Component {
                     <Collapse isOpen={!this.state.collapsed} navbar>
                         <Nav navbar>
                             <NavItem>
-                                <NavLink href="/">Login</NavLink>
+                                <NavLink href="/">Home</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="/signin">Login</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="/signup">Signup</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="/profile">Profile</NavLink>
@@ -48,7 +54,7 @@ class AppNavbar extends React.Component {
                                 <NavLink href="/payment">Payment</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                                <NavLink href="/*">NotFound</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>
