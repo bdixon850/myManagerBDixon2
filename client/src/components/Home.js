@@ -1,9 +1,17 @@
 import React from 'react';
+import manager from '../images/managerImage.jpeg';
+
+const homeStyle = {
+    'backgroundImage': `url(${manager})`, 
+    'backgroundSize': 'cover',
+    'overflow': 'hidden',
+    'height': '700px',
+}
 
 
 function Home () {
     return (
-        <div>
+        <div style={homeStyle}>
             <h1>Welcome to the Home Page</h1>
         </div>
             // <div className="bd-example" id="caroMain">

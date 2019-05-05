@@ -8,6 +8,7 @@ import Profile from './components/Profile';
 import Contractor from './components/Contractor';
 import './App.css';
 import ThankYou from './components/Thankyou';
+import Dashboard from './components/Dashboard';
 import Home from './components/Home';
 import { Provider } from 'react-redux';
 import store from './store';
@@ -47,6 +48,7 @@ class App extends Component {
               <Route exact path='/' component={Home} />
               <Route exact path='/register' component={Register} />
               <Route exact path='/login' component={Login} />
+              <Route exact path='/dashboard' component={Dashboard} />
               <Route exact path='/profile' component={Profile} />
               <Route exact path='/payment' component={Payment} />
               <Route exact path='/contractor' component={Contractor}/>
