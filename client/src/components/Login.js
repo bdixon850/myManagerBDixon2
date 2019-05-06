@@ -5,9 +5,29 @@ import { connect } from 'react-redux';
 import { loginUser } from '../actions/authActions';
 import classnames from 'classnames';
 
+// const loginStyle = {
+//     'backgroundColor': 'lightgrey',
+//     'height':'700px'
+// }
+
+const formStyle = {
+    margin: "150px",
+    marginLeft: "200px",
+    borderStyle: "ridge",
+    borderWidth: "20px",
+    borderColor: "grey",
+    padding: "50px",
+    width: "400px",
+    backgroundColor: "white"
+}
+
 const loginStyle = {
-    'backgroundColor': 'lightgrey',
-    'height':'700px'
+    backgroundColor: "grey",
+    position: "absolute",
+    // height: "635px",
+    height: "1000px",
+    width: "100%",
+    top: "50px"
 }
 
 class Login extends Component {
@@ -56,6 +76,7 @@ class Login extends Component {
         const { errors } = this.state;
     return (
         <div style={loginStyle}>
+        <div style={formStyle}>
             <div className="container">
                 <div style={{ marginTop: "4rem" }} className="row">
                 <div className="col s8 offset-s2">
@@ -118,6 +139,7 @@ class Login extends Component {
                 </div>
                 </div>
             </div>
+        </div>
         </div>
     );
   }

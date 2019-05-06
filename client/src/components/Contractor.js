@@ -3,6 +3,15 @@ import $ from 'jquery';
 import  'bootstrap/dist/css/bootstrap.css';
 import contractors from '../contractors.json';
 
+const background = {
+    backgroundColor: "grey",
+    position: "absolute",
+    // height: "635px",
+    height: "1000px",
+    width: "100%",
+    top: "50px"
+}
+
 class Contractor extends Component {
     constructor(props) {
         super(props)
@@ -39,6 +48,7 @@ class Contractor extends Component {
     
     render() {
         return (
+            <div style={background}>
             <div>
                 {this.state.contractors.map(contractor => (
                     <div className="card" key={contractor.id} id={contractor.id}>
@@ -84,6 +94,7 @@ class Contractor extends Component {
                             </div>
                     </div>
                 ))};
+            </div>
             </div>
         );
     }
