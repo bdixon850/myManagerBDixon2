@@ -1,4 +1,6 @@
 import React from 'react';
+import logo from '../images/IMG-6937.jpg';
+import CSS from './Nav.css'
 
 import {
     Collapse,
@@ -31,24 +33,18 @@ class AppNavbar extends React.Component {
         return (
             <div>
                 <Navbar color="dark" dark expand="sm" className="mb-5">
-                    <NavbarBrand href="/" className="mr-auto">myManager</NavbarBrand>
+                    <NavbarBrand href="/" className="mr-auto"><img src={logo} className="logo" /></NavbarBrand>
                     <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
                     <Collapse isOpen={!this.state.collapsed} navbar>
                         <Nav navbar>
                             <NavItem>
-                                <NavLink href="/login">Login</NavLink>
+                                <NavLink href="/login" >Login</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/profile">Profile</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="/contractor">Contractor</NavLink>
+                                <NavLink href="/contractor">Search</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="/payment"></NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="/thankyou"></NavLink>

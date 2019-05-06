@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import AppNavbar from './components/AppNavbar';
 import Login from './components/Login';
+import Footer from './components/Footer';
 import Register from './components/Register';
 import Payment from './components/Payment';
-import Profile from './components/Profile';
 import Contractor from './components/Contractor';
 import './App.css';
 import ThankYou from './components/Thankyou';
@@ -49,11 +49,11 @@ class App extends Component {
               <Route exact path='/register' component={Register} />
               <Route exact path='/login' component={Login} />
               <Route exact path='/dashboard' component={Dashboard} />
-              <Route exact path='/profile' component={Profile} />
               <Route exact path='/payment' component={Payment} />
               <Route exact path='/contractor' component={Contractor}/>
               <Route exact path='/thankyou' component={ThankYou} />
             </Switch>
+            <Footer />
           </Router>
         </Provider>
       </div>
