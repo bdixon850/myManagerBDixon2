@@ -7,6 +7,7 @@ const db = require('./config/keys').mongoURI;
 const passport = require('passport');
 const users = require('./routes/api/users');
 const stripe = require('stripe')('sk_test_20MQcHKiDiettG9cfMdTDcRM00h29hfI4A');
+const path = require('path');
 
 app.use(require('body-parser').text());
 
@@ -19,6 +20,10 @@ app.use(bodyParser.json());
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
+
+  app.get('*', (req, res) => {
+      res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  })
 }
 
 // Passport middleware
