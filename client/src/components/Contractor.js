@@ -67,11 +67,11 @@ class Contractor extends Component {
                                             <form>
                                                 <div className="form-group">
                                                     <label htmlFor="recipient-name" className="col-form-label">Personal Message:</label>
-                                                    <input type="text" className="form-control" id="recipient-name"></input>
+                                                    <input type="text" className="form-control" id="recipient-name" required></input>
                                                 </div>
                                                 <div className="form-group">
                                                     <label htmlFor="message-text" className="col-form-label">Offer Price:</label>
-                                                    <textarea className="form-control" id="message-text"></textarea>
+                                                    <textarea className="form-control" id="message-text" required></textarea>
                                                 </div>
                                             </form>
                                         </div>
