@@ -7,7 +7,7 @@ class Footer extends Component {
         return (
             <div>
                 <footer className="footer">
-                    <h1> &#169;</h1>
+                    <h3> &#169; 2019 Don't hit me, hit myManager</h3>
 
                 </footer>
             </div>

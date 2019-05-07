@@ -24,42 +24,42 @@
         "id": 4,
         "Name": "AJ",
         "image": "https://media.istockphoto.com/photos/construction-worker-picture-id679524696?k=6&m=679524696&s=612x612&w=0&h=ipov71ttm7bKl1mFLeIXsM6LbTSjfzyZdxcW340XM4w=",
-        "Occupation": "Artist",
+        "Occupation": "Contractor",
         "Price": "$200/hr."
     },
     {
         "id": 5,
         "Name": "Cynthia",
         "image": "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/rseL48eTitd99qgp/videoblocks-young-female-construction-worker-drilling-concrete-wall-with-the-drill-and-smiling-at-the-camera_smboehmjpg_thumbnail-full14.png",
-        "Occupation": "Artist",
+        "Occupation": "Contractor",
         "Price": "$200/hr."
     },
     {
         "id": 6,
         "Name": "Brian",
         "image": "https://mywallworks.com/wp-content/uploads/2018/08/hiring-a-painter.jpeg",
-        "Occupation": "Artist",
-        "Price": "$200/hr."
+        "Occupation": "Paint Service",
+        "Price": "$100/hr."
     },
     {
         "id": 7,
         "Name": "Lauren",
         "image": "https://local12.com/resources/media/365fdb97-e8d9-47f5-95fc-6da6e3bd615e-large16x9_1280x720_60621P00LOHYT.jpg?1542127636788",
-        "Occupation": "Artist",
+        "Occupation": "Home Decor/Reno",
         "Price": "$200/hr."
     },
     {
         "id": 8,
         "Name": "Brittany",
         "image": "https://peopledotcom.files.wordpress.com/2017/02/christina-el-moussa.jpg",
-        "Occupation": "Artist",
+        "Occupation": "Home Decor/Reno",
         "Price": "$200/hr."
     },
     {
         "id": 9,
         "Name": "Terry",
         "image": "https://www.edmontonconventioncentre.com/wp-content/uploads/2016/11/Serge-Curtis-Comeau-Exhibit-website-banner.jpg",
-        "Occupation": "Artist",
+        "Occupation": "Chef",
         "Price": "$200/hr."
     },
     {
@@ -73,14 +73,14 @@
         "id": 11,
         "Name": "Bob",
         "image": "https://media.golfdigest.com/photos/5995b441bd3a1e54d42a63a2/master/w_768,c_limit/GettyImages-151333806.jpg",
-        "Occupation": "Artist",
-        "Price": "$200/hr."
+        "Occupation": "Butler",
+        "Price": "$120/hr."
     },
     {
         "id": 12,
         "Name": "Lisa",
         "image": "https://www.thetidymaids.com/wp-content/uploads/2015/05/triangle-maid-service.jpg",
-        "Occupation": "Cleaning Service",
-        "Price": "$50/hr."
+        "Occupation": "Chef",
+        "Price": "$175/hr."
     }
 ]

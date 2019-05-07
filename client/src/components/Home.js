@@ -23,7 +23,6 @@ class Home extends Component {
                     <div className="col-lg-12">
                         <div className="jumbotron" style={homeStyle}>
                             <h1 className="display-4">Welcome to myManager</h1>
-                            <p>This app is designed to ......................</p>
                         </div>
                     </div>
                 </div>

@@ -8,6 +8,7 @@ import classnames from 'classnames';
 const formStyle = {
     margin: "150px",
     // marginLeft: "200px",
+    marginTop: "50px",
     marginLeft: "500px",
     borderStyle: "ridge",
     borderWidth: "20px",
