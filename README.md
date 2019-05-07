@@ -1,4 +1,4 @@
-# myManagerBDixon2
+# myManager
 
 ![npm](https://img.shields.io/badge/npm-6.4.1%20-brightgreen.svg)
 ![npm](https://img.shields.io/badge/npm-sequelize-orange.svg)
