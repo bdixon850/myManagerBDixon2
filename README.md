@@ -3,7 +3,7 @@
 ![npm](https://img.shields.io/badge/npm-6.4.1%20-brightgreen.svg)
 ![npm](https://img.shields.io/badge/npm-sequelize-orange.svg)
 ![travis](https://img.shields.io/badge/travis-passed-green.svg)
-![project3](https://img.shields.io/badge/project2-Break’sOver-brightgreen.svg)
+![project3](https://img.shields.io/badge/project3-myManager-brightgreen.svg)
 ![myManager](src/images/myManagerLogo.JPG)
 ##
 public/images/myManagerLogo.JPG
