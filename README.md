@@ -1,9 +1,9 @@
-# myManagerBDixon2
+# myManager
 
 ![npm](https://img.shields.io/badge/npm-6.4.1%20-brightgreen.svg)
 ![npm](https://img.shields.io/badge/npm-sequelize-orange.svg)
 ![travis](https://img.shields.io/badge/travis-passed-green.svg)
-![project3](https://img.shields.io/badge/project2-Break’sOver-brightgreen.svg)
+![project3](https://img.shields.io/badge/project3-myManager-brightgreen.svg)
 ![myManager](src/images/myManagerLogo.JPG)
 ##
 
@@ -16,12 +16,11 @@ MyManager automates a Manager. It enables people to book independant contractors
   * A customizable “express backend”
   * Login and oauth endpoints
   * Webhook endpoints for communicating with platforms
-* Bcrypt
-* Node.js
-* MongoDB/Mongoose
-* Express
 * React Stripe for payment
+* MongoDB/Mongoose
 * PassPort
+* Express
+* Node.js
 
 
 View diployed project at Heroku:
@@ -34,4 +33,8 @@ AJ Imoukhuede (UI/Styling)
 
 Sidney Robinson (UI/Styling)
 
+<<<<<<< HEAD
 Morgan Garcia (Project Manager)
+=======
+Morgan Garcia
+>>>>>>> 23d3fb3c8162a1dc49266db6d5016de807345af5
