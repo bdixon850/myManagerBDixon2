@@ -25,7 +25,7 @@ MyManager automates a Manager. It enables people to book independant contractors
 
 
 View diployed project at Heroku:
-https://.mymanager19.herokuapp.com/
+https://mymanager19.herokuapp.com/
 
 # Authors
 Brandon Dixon (Functionality both front and backend)

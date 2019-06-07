@@ -1,5 +1,6 @@
 .home {
     background-color: gray;
+    background-size: cover;
     height: 700px;
     margin-top: -50px
 }
