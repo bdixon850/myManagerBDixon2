@@ -16,9 +16,11 @@ MyManager automates a Manager. It enables people to book independant contractors
   * A customizable “express backend”
   * Login and oauth endpoints
   * Webhook endpoints for communicating with platforms
-* Js webtoken
-* M Lab
+* React Stripe for payment
+* MongoDB/Mongoose
 * PassPort
+* Express
+* Node.js
 
 
 
