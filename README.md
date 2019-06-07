@@ -6,7 +6,7 @@
 ![project3](https://img.shields.io/badge/project2-Break’sOver-brightgreen.svg)
 ![myManager](src/images/myManagerLogo.JPG)
 ##
-public/images/myManagerLogo.JPG
+
 
 MyManager automates a Manager. It enables people to book independant contractors without contacting the clients directly.
 
@@ -16,22 +16,22 @@ MyManager automates a Manager. It enables people to book independant contractors
   * A customizable “express backend”
   * Login and oauth endpoints
   * Webhook endpoints for communicating with platforms
-* Js webtoken
-* M Lab
+* Bcrypt
+* Node.js
+* MongoDB/Mongoose
+* Express
+* React Stripe for payment
 * PassPort
-
-
-
 
 
 View diployed project at Heroku:
 https://.mymanager19.herokuapp.com/
 
 # Authors
-Brandon Dixon
+Brandon Dixon (Functionality both front and backend)
 
-AJ Imoukhuede
+AJ Imoukhuede (UI/Styling)
 
-Sidney Robinson
+Sidney Robinson (UI/Styling)
 
-Morgan Garcia
+Morgan Garcia (Project Manager)
