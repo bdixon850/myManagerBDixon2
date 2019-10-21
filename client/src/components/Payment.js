@@ -15,6 +15,6 @@ class Payment extends Component {
       </StripeProvider>
     );
   }
-}
+};
 
 export default Payment;

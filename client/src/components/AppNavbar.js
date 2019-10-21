@@ -33,7 +33,7 @@ class AppNavbar extends React.Component {
         return (
             <div>
                 <Navbar color="dark" dark expand="sm" className="mb-5">
-                    <NavbarBrand href="/" className="mr-auto"><img src={logo} className="logo" /></NavbarBrand>
+                    <NavbarBrand href="/" className="mr-auto"><img src={logo} className="logo" alt="logopic" /></NavbarBrand>
                     <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
                     <Collapse isOpen={!this.state.collapsed} navbar>
                         <Nav navbar>
