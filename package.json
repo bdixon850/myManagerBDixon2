@@ -34,6 +34,6 @@
     "passport-jwt": "^4.0.0",
     "react-stripe-elements": "^3.0.0",
     "stripe": "^6.31.2",
-    "validator": "^10.11.0"
+    "validator": "^13.7.0"
   }
 }
